@@ -63,7 +63,7 @@ int main (int argc, char *argv[]) {
   pthread_t thread;
   long status;
 
-  // Tenta criar a thread, caso não consiga informa o erro
+  // Cria a thread
   status = pthread_create(&thread, NULL, threadBody, &dados);
   if (status)
   {
@@ -71,7 +71,7 @@ int main (int argc, char *argv[]) {
      exit (1) ;
   }
 
-  // Tenta aguardar pela thread criada, caso não consiga informa o erro
+  // Aguarda o encerramento da thread
   status = pthread_join(thread, NULL);
   if (status)
   {
