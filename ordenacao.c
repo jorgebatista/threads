@@ -105,7 +105,7 @@ int main(int argc, char *argv[]) {
   }
 
   pthread_t thread[3];
-  long status, indice = 0;
+  long status;
 
   indices indices_t1, indices_t2, indices_t3;
 
